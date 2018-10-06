@@ -3,22 +3,32 @@
 
 add.js
 
-```
-let add = (x, y) => {
+```javascript
+export const add = (x, y) => {
   return x + y;
 };
 
-export default add;
+export const addWithDefault = (x = 200, y) => {
+  return x + y;
+};
 ```
 
 add.test.js
 
-```
-import add from "./add";
+```javascript
+import { add, addWithDefault } from "./add2";
 
-describe("add two numbers", () => {
-  it("add two numbers", () => {
-    console.log(add(1, 2));
+describe("test the add functions", () => {
+  describe("test the basic add function", () => {
+    it("shoud add two numbers", () => {
+      expect(add(2, 2)).toEqual(4);
+    });
+  });
+
+  describe("test the basic add function with a default", () => {
+    it("should add two numbers with a default", () => {
+      expect(addWithDefault(undefined, 4)).toEqual(204);
+    });
   });
 });
 ```
