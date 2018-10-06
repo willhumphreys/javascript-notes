@@ -1,3 +1,3 @@
-- Create a simple file with a function that adds two numbers
+- Create a simple file with a function that adds two numbers with a default
 
-- Create a function that adds two numbers and use import and export
+- Factorial

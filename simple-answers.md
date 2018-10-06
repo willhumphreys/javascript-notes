@@ -32,3 +32,17 @@ describe("test the add functions", () => {
   });
 });
 ```
+
+factorial.js
+
+```javascript
+let factorial = num => {
+  let result = 1;
+  while (--num) result *= num + 1;
+  return result;
+};
+
+const result = factorial(4);
+
+console.log(result);
+```
