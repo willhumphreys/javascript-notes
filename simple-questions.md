@@ -7,3 +7,5 @@
 - Map an array
 
 - Reverse an array
+
+- Is an Palindrome
