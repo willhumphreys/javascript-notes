@@ -1,6 +1,4 @@
-const args = process.argv;
-
-let isPrime = num => {
+export const isPrime = num => {
   if (num === 2 || num === 3) return true;
   if (num % 2 === 0) return false;
 
@@ -13,8 +11,3 @@ let isPrime = num => {
   }
   return true;
 };
-
-const possiblePrime = Number(args[2]);
-
-console.log("Using argument " + possiblePrime);
-console.log(isPrime(possiblePrime));
