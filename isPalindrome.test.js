@@ -1,4 +1,4 @@
-import { isPalindrome } from "./isPalindrome2";
+import { isPalindrome } from "./isPalindrome";
 
 describe("test the palindrome function", () => {
   it("test with anna", () => {

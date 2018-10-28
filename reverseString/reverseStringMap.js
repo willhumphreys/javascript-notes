@@ -7,5 +7,5 @@ export const reverse = arr => {
 
   console.log(arr);
 
-  return arr.split('').map(() => arr[--index]).join("")
+  return arr.split('').map(() => arr[--index]).join('')
 };

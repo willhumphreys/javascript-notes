@@ -1,6 +1,6 @@
-import factorial from './factorial2'
+import { factorial } from './factorial'
 
-describe('my test', () => {
+describe('factorial tests', () => {
     it('should test the factorial', () => {
 
         expect(factorial(4)).toEqual(24)
