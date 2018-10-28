@@ -1,7 +1,7 @@
-import { reverseString } from './reverseStringReduce'
+import { reverse } from './reverseStringReduce'
 
 describe('reverse a string', () => {
     it('should reverse the string hello', () => {
-        expect(reverseString('hello')).toEqual('olleh');
+        expect(reverse('hello')).toEqual('olleh');
     })
 })
